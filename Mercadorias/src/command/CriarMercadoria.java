@@ -1,4 +1,4 @@
-package command1;
+package command;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 import model.Mercadoria;
 import to.MercadoriaTO;
 
-public class ManterMercadoriaCriar implements Command{
+public class CriarMercadoria implements Command{
 
 	@Override
 	public void executa(HttpServletRequest request, HttpServletResponse response)

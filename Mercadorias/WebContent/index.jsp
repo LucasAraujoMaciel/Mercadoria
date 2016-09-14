@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 
 <html lang="pt-br">
 	<head>
@@ -13,12 +13,8 @@
 	</head>
 	<body>
 	
-	<header>
-	
-	</header>
-	<session>
-		<div class="container">
-			<form>
+	<div class="container">
+			<form action="controller.do" method="get">
 				<h3 class="page-header">Cadastro de Mercadoria</h3>
 				<div class="col-md-12 col-sm-12 col-xs-12">				
 					<div class="form-group">
@@ -59,12 +55,11 @@
   					</div>
 				</div>
 				<div class="col-md-12 col-sm-12 col-xs-12" align="center">
-					<button type="submit" class="btn btn-primary" name="cadastar" id="cadastrar" value="cadastrar">Cadastrar</button>
+					<button type="submit" class="btn btn-primary" name="command" value="CriarMercadoria">Cadastrar</button>
 				</div>
 				
 			</form>
 		</div>
-	</session>
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

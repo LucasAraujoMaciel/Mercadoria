@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import command.Command;
+import command1.Command;
 
 @WebServlet("/controller.do")
 public class ServletController extends HttpServlet {

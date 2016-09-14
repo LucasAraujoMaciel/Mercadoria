@@ -1,4 +1,4 @@
-package command;
+package command1;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,9 +11,9 @@ import javax.servlet.http.HttpSession;
 import model.Mercadoria;
 import to.MercadoriaTO;
 
-public class CriarMercadoria{
+public class ManterMercadoriaCriar implements Command{
 
-	
+	@Override
 	public void executa(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String pCodigo = request.getParameter("codigo");

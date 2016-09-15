@@ -23,13 +23,6 @@ public class MercadoriaDAO {
 			stm.setString(5, to.getTipo());
 			stm.setString(6, to.getNegocio());
 			stm.execute();
-			String sqlSelect = "SELECT LAST_INSERT_ID()";
-			try(PreparedStatement stm1 = conn.prepareStatement(sqlSelect);
-					ResultSet rs = stm1.executeQuery();){
-					if(rs.next()){
-						to.setCodigo(rs.getInt(1));
-					}
-			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

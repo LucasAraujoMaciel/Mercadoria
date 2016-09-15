@@ -37,10 +37,7 @@
                     </div>
                 </div>
             </div>
-            <!-- /.modal -->
-            <!-- Barra superior com os menus de navegação -->
-			<!--  c:import url="Menu.jsp"/> -->
-            <!-- Container Principal -->
+            
             <div id="main" class="container-fluid">
                 <form action="controller.do" method="post">
                     <div id="top" class="row">
@@ -48,16 +45,7 @@
                             <h2>Mercadoria</h2>
                         </div>
 
-                        <div class="col-md-6">
-                            <div class="input-group h2">
-                                <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Clientes (deixe vazio para trazer todos)">
-                                <span class="input-group-btn">
-                <button class="btn btn-primary" type="submit" name="command" value="ListarMercadoriasBuscar">
-                    <span class="glyphicon glyphicon-search"></span>
-                                </button>
-                                </span>
-                            </div>
-                        </div>
+                     
 
                         <div class="col-md-3">
                             <a href="index.jsp" class="btn btn-primary pull-right h2">Nova Mercadoria</a>
@@ -70,7 +58,7 @@
                 <div id="list" class="row">
 
                     <div class="table-responsive col-md-12">
-                        <table class="table table-striped" cellspacing="0" cellpadding="0">
+                        <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <th>CODIGO</th>
@@ -83,7 +71,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-          					<c:forEach var="mercadoria" items="${lista }">
+          					<c:forEach var="mercadoria" items="${lista}">
                                        <tr>
                                             <td>
                                                ${mercadoria.codigo }

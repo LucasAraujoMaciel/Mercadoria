@@ -48,9 +48,9 @@
 				</div>
 				<div class="col-md-12 col-sm-12 col-xs-12">	
 					<div class="form-group">			
-						<select class="custom-select">
-  							<option value="1">Compra</option>
-  							<option value="2">Venda</option>
+						<select id="negocio" name="negocio" class="custom-select">
+  							<option value="compra">Compra</option>
+  							<option value="venda">Venda</option>
   						</select>
   					</div>
 				</div>

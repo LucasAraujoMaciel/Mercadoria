@@ -16,20 +16,14 @@ public class CriarMercadoria implements Command{
 	@Override
 	public void executa(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String pCodigo = request.getParameter("codigo");
+		int pCodigo = Integer.parseInt(request.getParameter("codigo"));
 		String pTipo = request.getParameter("tipo");
 		String pNome = request.getParameter("nome");;
 		double pQuantidade = Double.parseDouble(request.getParameter("quantidade"));
 		double pPreco = Double.parseDouble(request.getParameter("preco"));
 		String pNegocio= request.getParameter("negocio");
-		int cod = -1;
-		try {
-			cod = Integer.parseInt(pCodigo);
-		} catch (Exception e) {
 
-		}
-
-		Mercadoria mercadoria = new Mercadoria(cod, pTipo, pNome, pQuantidade, pPreco, pNegocio);
+		Mercadoria mercadoria = new Mercadoria(pCodigo, pTipo, pNome, pQuantidade, pPreco, pNegocio);
 		HttpSession session = request.getSession();
 
 		mercadoria.criar();

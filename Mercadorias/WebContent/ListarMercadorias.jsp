@@ -29,7 +29,7 @@
                         </div>
                         <div class="modal-footer">
                             <form action="controller.do" method="post">
-                                <input type="hidden" name="id" id="id_excluir" />
+                                <input type="hidden" name="codigo" id="id_excluir" />
                                 <button type="submit" class="btn btn-primary" name="command" value="ExcluirMercadoria">Sim</button>
                                 <button type="button" class="btn btn-default" data-dismiss="modal">N&atilde;o</button>
                             </form>
